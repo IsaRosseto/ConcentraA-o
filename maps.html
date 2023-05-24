@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Psicólogas e Clínicas Especializadas em TDAH</title>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    /* Estilos do título */
+    h1 {
+      color: #333;
+      text-align: center;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    /* Estilos dos marcadores */
+    .marker {
+      background-color: #ff4646;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 50%;
+      font-size: 14px;
+    }
+
+    /* Estilos das informações do marcador */
+    .info-window {
+      max-width: 200px;
+    }
+
+    /* Estilos dos anúncios */
+    .ad-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f7f7f7;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .ad-image {
+      flex: 0 0 100px;
+      margin-right: 20px;
+      width: 80px;
+    }
+
+    .ad-content {
+      flex: 1;
+    }
+
+    .ad-title {
+      color: #333;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .ad-description {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .ad-rating {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .ad-rating span {
+      color: #FFC107;
+      font-size: 16px;
+      margin-right: 5px;
+    }
+
+    /* Estilos gerais */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+<h1>Psicólogas e Clínicas Especializadas em TDAH na Região</h1>
+<div id="map"></div>
+
+<div class="ad-container">
+  <img class="ad-image" src="https://images.generated.photos/mtHGEF0wpEX_I-TKptGBjR9Inms24s7nT9gc5ccVw6Y/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODQ5OTQ3LmpwZw.jpg" alt="Psychologist 1">
+  <div class="ad-content">
+    <h2 class="ad-title">Psicóloga Maria Silva</h2>
+    <p class="ad-description">Especialista em TDAH, com experiência em crianças e adultos. Abordagem terapêutica individualizada para melhor atender às necessidades de cada paciente.</p>
+    <div class="ad-rating">
+      <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+      <span>4.0</span>
+    </div>
+  </div>
+</div>
+
+<div class="ad-container">
+  <img class="ad-image" src="https://images.generated.photos/IR925tbvivrKG5q7VK-yHL8ZdWQx3ayjAbQS7X0P50c/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MTc0MjczLmpwZw.jpg" alt="Psychologist 2">
+  <div class="ad-content">
+    <h2 class="ad-title">Dr. João Oliveira</h2>
+    <p class="ad-description">Clínica especializada em TDAH, oferecendo uma abordagem multidisciplinar para o diagnóstico e tratamento. Equipe de profissionais qualificados e ambiente acolhedor.</p>
+    <div class="ad-rating">
+      <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span>5.0</span>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  function initMap() {
+    // Coordenadas de exemplo
+    var locations = [
+      {
+        name: "Clínica A",
+        lat: -23.5505,
+        lng: -46.6333
+      },
+      {
+        name: "Clínica B",
+        lat: -23.5608,
+        lng: -46.6325
+      },
+      {
+        name: "Clínica C",
+        lat: -23.5489,
+        lng: -46.6386
+      }
+    ];
+
+    // Cria um mapa
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: {lat: -23.5505, lng: -46.6333} // Coordenadas do centro do mapa
+    });
+
+    // Adiciona marcadores para cada localização
+    locations.forEach(function(location) {
+      var marker = new google.maps.Marker({
+        position: {lat: location.lat, lng: location.lng},
+        map: map,
+        title: location.name
+      });
+
+      // Cria uma janela de informações para cada marcador
+      var infowindow = new google.maps.InfoWindow({
+        content: location.name
+      });
+
+      // Mostra a janela de informações ao clicar no marcador
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
+    });
+  }
+</script>
+
+<!-- Inclui a API do Google Maps -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAruLdteIV31px8m0ehK1zGb9feuYkUxZM&callback=initMap"></script>
+</body>
+</html>

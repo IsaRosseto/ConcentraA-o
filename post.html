@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Rede Social</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Estilos gerais */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilos para o header */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .profile .username {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .header-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-icons i {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    /* Estilos para a seção de post */
+    .post {
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .post-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .post-header .post-author {
+      font-weight: bold;
+    }
+
+    .post-content {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .post-actions {
+      display: flex;
+      align-items: center;
+      color: #777;
+      font-size: 14px;
+    }
+
+    .post-actions span {
+      margin-right: 10px;
+    }
+
+    .post-actions i {
+      margin-right: 5px;
+    }
+
+    /* Estilos para a seção de comentários */
+    .comments {
+      margin-top: 20px;
+    }
+
+    .comment {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .comment img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    .comment .comment-content {
+      background-color: #f5f5f5;
+      padding: 10px;
+      border-radius: 3px;
+    }
+
+    .comment .comment-author {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="profile">
+      <img src="https://this-person-does-not-exist.com/img/avatar-gen1178e5dec5da0cea725af0c052487772.jpg" alt="Foto do perfil">
+      <div class="username">Tarsicio Nino</div>
+    </div>
+    <div class="header-icons">
+      <i class="fas fa-bell"></i>
+      <i class="fas fa-cog"></i>
+      <i class="fas fa-sign-out-alt"></i>
+    </div>
+  </div>
+
+  <div class="post">
+    <div class="post-header">
+      <img src="https://this-person-does-not-exist.com/img/avatar-gen5c67f505373cc37b6f775b7bf1634c47.jpg" alt="Foto do usuário">
+      <div class="post-author">José Lima Goncalves</div>
+    </div>
+    <div class="post-content">
+      Há mais ou menos um ano meu filho foi diagnosticado portador do TDAH.Foi difícil, pois até chegar a esse diagnóstico passei por uma série de dificuldades, inclusive dele ser expulso da creche que matriculei com apenas um mês que estava matriculado. Pessoas dizendo que ele é mal educado, que não tem limites… Então o levei ao neurologista que enfim diagnosticou o problema e o medicou, mas como o médico me informou o processo é lento. As escolas vivem fazendo queixas e não sabem lidar com uma criança TDAH. Como não é previsto na lei, meu filho não tem direito há um olhar diferenciado, pois não é considerado para educação especial. Enfim espero que as políticas mudem e que ele possa ter um olhar diferenciado para poder se desenvolver melhor. Tento levar para a escola que está matriculado informes, livros que falam sobre TDAH para que possam estudar, conhecer e melhor trabalhar com ele.
+    </div>
+    <div class="post-actions">
+      <span><i class="fas fa-thumbs-up"></i>10 curtidas</span>
+      <span><i class="fas fa-comment"></i>5 comentários</span>
+    </div>
+    <div class="comments">
+      <div class="comment">
+        <img src="https://this-person-does-not-exist.com/img/avatar-gen11b3bef1ce90fdfc92d671312cf7a87d.jpg" alt="Foto do usuário">
+        <div class="comment-content">
+          <div class="comment-author">Matilde Fernandes Correia</div>
+          Sinto muito pela sua situação. É realmente frustrante quando as escolas não estão preparadas para lidar com crianças com necessidades especiais. Espero que as políticas educacionais mudem em breve e que seu filho receba o apoio e a compreensão necessários para se desenvolver plenamente.
+        </div>
+      </div>
+      <div class="comment">
+        <img src="https://this-person-does-not-exist.com/img/avatar-gen7767c5cbf54a3b839bed6ba8689f5609.jpg" alt="Foto do usuário">
+        <div class="comment-content">
+          <div class="comment-author">Davi Silva </div>
+          Nossa, ler esse relato me trouxe muitas lembranças. Também fui diagnosticado com TDAH há alguns anos, e foi uma jornada cheia de desafios. Lembro-me de ser rotulado como "distraído" e "desinteressado" por professores e colegas de classe, sem que eles entendessem a verdadeira causa por trás do meu comportamento. Foi um alívio quando finalmente obtive um diagnóstico e comecei o tratamento adequado.        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="post">
+    <div class="post-header">
+      <img src="https://this-person-does-not-exist.com/img/avatar-gene9c238446842a5cb076180b33d3ab2d9.jpg" alt="Foto do usuário">
+      <div class="post-author">Raissa Ribeiro</div>
+    </div>
+    <div class="post-content">
+      Olá a todos! 👋
+
+      Como psicóloga, tenho acompanhado histórias como essa mencionada aqui e entendo o quão desafiador pode ser lidar com o diagnóstico de TDAH, tanto para os pais quanto para os próprios adolescentes. Gostaria de oferecer meu apoio e conhecimento para quem estiver passando por essa situação.
+      <br> #TDAH #ApoioPsicológico #EducaçãoInclusiva #DesenvolvimentoPessoal
+    </div>
+
+    <div class="post-actions">
+      <span><i class="fas fa-thumbs-up"></i>8 curtidas</span>
+      <span><i class="fas fa-comment"></i>3 comentários</span>
+    </div>
+    <div class="comments">
+      <div class="comment">
+        <img src="https://this-person-does-not-exist.com/img/avatar-gen099ec5d7b5a53417bab5769c87bd285b.jpg" alt="Foto do usuário">
+        <div class="comment-content">
+          <div class="comment-author">Lavinia Pereira</div>
+          Tive a oportunidade de receber seu apoio e orientação quando meu filho foi diagnosticado com TDAH. A psicóloga demonstrou um profundo entendimento dessa condição e nos forneceu estratégias valiosas para lidar com os desafios diários.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
